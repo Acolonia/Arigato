@@ -1,11 +1,41 @@
 # Arigato 
+Control Flow Examples
 
-let name = 'Alejandro';
+let MovieRating = 7;
 
-const PrimaryColors = 3;
+if (MovieRating === 6 || 7) {
+    alert('Movie is very good!');
+}
 
-const isBoy = true;
+if (MovieRating === 10) {
+    alert ('Movie is a peice of art!');
+} else if (MovieRating < 10) {
+    alert('It could have been better!');
+} 
 
-let gradesinClassroom = [9,10,11,12];
+switch(MovieRating) {
+    case 10:
+        alert('MasterPeice!');
+        break;
+    case 9:
+        alert('Amazing!');
+        break;
+    case 8:
+        alert('Solid!')
+        break;
+    case 7:
+        alert('Very Good!')
+        break;
+    case 6:
+        alert('Average!')
+        break;
+    case 5:
+        alert('Average but could have been better!')
+        break;
+    default:
+        alert('The developers needed more time the movie was rushed!');
+}
 
-let uhms = {name: Union Hill Middle School, status:old, gradesTaught:[7,8];
+let MovieIsGood = MovieRating >= 7 ? false : true; 
+
+
